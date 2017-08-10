@@ -1,0 +1,8 @@
+<div class="add">
+  <input type="text" placeholder="输入城市名称" [(ngModel)]="addCityName"><button (click)="addCity()">添加城市</button>
+</div>
+<div>
+    <app-weather-list-item *ngFor="let city of cityList" [city]="city" (click)="onSelect(city)"></app-weather-list-item>
+</div>
+
+

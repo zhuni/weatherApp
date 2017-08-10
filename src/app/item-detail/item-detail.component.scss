@@ -1,0 +1,45 @@
+.curWeather {
+  position: relative;
+  color: #a57878;
+  text-shadow: 1px 1px 3px #ce8e8e;
+  font-size: 20px;
+  img {
+    width: 70%;
+    display: block;
+    margin: 0 auto
+  }
+  .desc {
+    position: absolute;
+  }
+    .date {
+      top: 30px;
+      left: 30px;
+    }
+
+    .temp {
+      bottom: 0;
+      right: 30px;
+    }
+}
+
+li {
+  color: #83b0d8;
+  padding-left: 20px;
+  span,img {
+    vertical-align: middle;
+  }
+  img {
+    margin: 0 10px;
+  }
+}
+
+@keyframes myfirst
+{
+  from {transform:scale(1.1)}
+  to {transform: scale(1)}
+}
+
+.bad {
+  animation: myfirst 3s infinite ease-in-out;
+  animation-direction: alternate;
+}

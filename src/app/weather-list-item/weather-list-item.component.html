@@ -1,0 +1,7 @@
+<div class="list-item" *ngIf="!loading" [@flyInOut]="'in'">
+  <span>{{cityName}}</span>
+  <span class="text">{{weather.text}}</span>
+  <img src="../../assets/weather-icon/{{weather.code}}.png" alt="" [@roate]="rotate">
+  <span>温度:{{weather.temperature}}摄氏度</span>
+  <span class="right">></span>
+</div>

@@ -1,0 +1,18 @@
+<div class="curWeather" *ngIf="loading">
+  <img src="../../assets/weather-icon/{{curWeather.code_day}}.png" alt="{{curWeather.text_day}}" class="bad">
+  <p class="desc date">今天白天: {{curWeather.text_day}}</p>
+  <div class="desc temp">
+    <p>白天最高温度:{{curWeather.high}}</p>
+    <p>白天最低温度:{{curWeather.low}}</p>
+  </div>
+</div>
+<div>
+  <ul >
+    <li *ngFor="let item of restWeatherArr">
+      <span>{{item.date}}</span>
+      <img src="../../assets/weather-icon/{{item.code_day}}.png" alt="{{item.text_day}}" [ngClass]="{'bad': item.code_day > 10}">
+      <span>白天最高温度:{{item.high}}摄氏度</span>
+    </li>
+  </ul>
+</div>
+

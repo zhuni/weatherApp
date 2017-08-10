@@ -1,0 +1,15 @@
+.header {
+  background-color: #e4a5c5;
+  height: 60px;
+  color: white;
+  line-height: 60px;
+  font-size: 25px;
+  font-weight: 800;
+}
+.header .headerInfo {
+    margin-left: 40px;
+}
+.header .back {
+    padding: 10px;
+    margin-right: -35px;
+}

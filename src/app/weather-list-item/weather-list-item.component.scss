@@ -1,0 +1,25 @@
+.list-item {
+  position: relative;
+  border: 1px solid #f3ebeb;
+  color: #383635;
+  padding-left: 20px;
+  span,img {
+    vertical-align: middle;
+  }
+
+  .text {
+    margin: 0 15px;
+    width: 40px;
+    display: inline-block;
+  }
+  img {
+    margin-right: 20px;
+  }
+  .right {
+    position: absolute;
+    right: 20px;
+    font-size: 35px;
+    box-shadow: 0 0 black;
+    text-shadow: 0 0 6px black;
+  }
+}
